@@ -64,10 +64,10 @@ const Footer = () => {
           <div className="flex items-center justify-between">
             <Image src="/images/logo.png" alt="Logo" width={286} height={65} />
             <div className="flex items-center justify-between gap-7">
-              <Image src="/images/tk.svg" width={24} height={24} alt="" />
-              <Image src="/images/insta.svg" width={24} height={24} alt="" />
-              <Image src="/images/x.svg" width={24} height={24} alt="" />
-              <Image src="/images/sp.svg" width={24} height={24} alt="" />
+              <Image src="/images/tk.svg" className="hover:scale-125 transition-all" width={24} height={24} alt="" />
+              <Image src="/images/insta.svg" className="hover:scale-125 transition-all" width={24} height={24} alt="" />
+              <Image src="/images/x.svg" className="hover:scale-125 transition-all" width={24} height={24} alt="" />
+              <Image src="/images/sp.svg" className="hover:scale-125 transition-all" width={24} height={24} alt="" />
             </div>
           </div>
         </div>
@@ -151,10 +151,10 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex items-center gap-8 pb-12">
-          <Image src="/images/tk.svg" width={26} height={24} alt="" />
-          <Image src="/images/insta.svg" width={29} height={24} alt="" />
-          <Image src="/images/x.svg" width={29} height={24} alt="" />
-          <Image src="/images/sp.svg" width={30} height={24} alt="" />
+        <Image src="/images/tk.svg" className="hover:scale-125 transition-all" width={26} height={24} alt="" />
+          <Image src="/images/insta.svg" className="hover:scale-125 transition-all" width={29} height={24} alt="" />
+          <Image src="/images/x.svg" className="hover:scale-125 transition-all" width={29} height={24} alt="" />
+          <Image src="/images/sp.svg" className="hover:scale-125 transition-all" width={30} height={24} alt="" />
         </div>
         <div className="flex flex-col gap-7 pb-16">
           <ul className="flex flex-col gap-7">

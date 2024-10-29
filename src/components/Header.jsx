@@ -32,10 +32,10 @@ const Header = () => {
             <Image src="/images/logo.png" width={220} height={139} alt="" />
           </div>
           <div className="social_icons lg:flex hidden gap-6 items-center justify-between">
-            <Image src="/images/tk.svg" width={24} height={24} alt="" />
-            <Image src="/images/insta.svg" width={24} height={24} alt="" />
-            <Image src="/images/x.svg" width={24} height={24} alt="" />
-            <Image src="/images/sp.svg" width={24} height={24} alt="" />
+            <Image src="/images/tk.svg" className="hover:scale-125 transition-all" width={24} height={24} alt="" />
+            <Image src="/images/insta.svg" className="hover:scale-125 transition-all" width={24} height={24} alt="" />
+            <Image src="/images/x.svg" className="hover:scale-125 transition-all" width={24} height={24} alt="" />
+            <Image src="/images/sp.svg" className="hover:scale-125 transition-all" width={24} height={24} alt="" />
             <ButtonLink
               text="Log in"
               link="#"
