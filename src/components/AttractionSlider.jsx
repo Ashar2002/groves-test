@@ -15,8 +15,11 @@ const AttractionSlider = () => {
     variableWidth: true,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2000,
+    speed: 1000,
     pauseOnHover: false,
+    lazyLoad: true,
+    infinite: true,
   };
 
   return (
