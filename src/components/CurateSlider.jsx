@@ -20,11 +20,16 @@ const CurateSlider = () => {
   };
 
   return (
-    <div className="2xl:ml-[10vw] sliderContainer flex items-center gap-10 pt-16">
+    <div className="2xl:ml-[10vw] sliderContainer flex md:flex-row flex-col md:items-center gap-10 pt-16 md:pl-0 pl-6">
       {/* Heading Section */}
-      <div className="max-w-[270px] w-full xl:min-w-[270px]">
-        <h2 className="">Curate your experience as you like</h2>
-        {/* <ButtonLink /> */}
+      <div className="w-full xl:min-w-[270px]">
+        <h2 className="md:mb-10 mb-8">Curate your <br /> experience <br /> as you like</h2>
+        <ButtonLink
+          classes="md:py-4 py-3 sm:max-w-[350px] max-w-[300px] text-[15px] w-full pl-6 pr-4 mb-8"
+          text="Book General Access Ticket"
+          link="#"
+          arrow
+        />
       </div>
 
       <div className="w-full">

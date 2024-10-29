@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="container md:pt-32 pt-10">
       <div className="text-center md:px-0 px-4">
-        <h2>Mall Of: Endless Possibilities</h2>
+        <h2 className="pb-2">Mall Of: Endless Possibilities</h2>
         <p className="max-w-[775px] mx-auto md:pb-14 pb-10">
           {`Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -22,13 +22,13 @@ const About = () => {
             className="mx-auto"
             priority
           />
-          <button className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-full w-[75px] h-[75px] flex items-center justify-center">
+          <button className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-full sm:w-[75px] w-12 h-12 sm:h-[75px] flex items-center justify-center">
             <Image
               src="/images/video.png"
               width={29}
               height={34}
               alt="play"
-              className="-mr-2"
+              className="sm:-mr-2 -mr-1 sm:w-fit w-5"
             />
           </button>
         </div>

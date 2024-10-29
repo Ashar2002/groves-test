@@ -58,16 +58,15 @@
 .variable-width .slick-list {
   margin: 0 -25px;
 }
-.curatedslider .slick-slide{
- margin: 0 10px;
+.curatedslider .slick-slide {
+  margin: 0 10px;
 }
 
-@media (max-width:1366px){
-  .sliderContainer{
+@media (max-width: 1366px) {
+  .sliderContainer {
     margin-left: 13vw;
   }
 }
-
 
 @media (max-width: 1440px) {
   .slick-dots {
@@ -99,6 +98,16 @@
     margin-left: auto !important;
     text-align: right !important;
   }
+}
+@media (max-width: 640px) {
+  .variable-width .slick-slide > div,.curatedslider .slick-slide {
+    margin: 0px 7px;
+    max-width: 215px;
+  }
+  .sliderContainer {
+    margin-left: auto;
+  }
+
 }
 @media (min-width: 1280px) and (max-width: 1440px) {
   .container {

@@ -1,7 +1,9 @@
+"use client";
 import Image from "next/image";
 import React, { useState } from "react";
 import ButtonLink from "./ButtonLink";
 import Link from "next/link";
+
 const NAV_ITEMS = [
   { text: "DINE WITH US", link: "#" },
   { text: "PLAN YOUR VISIT", link: "#" },
@@ -13,9 +15,11 @@ const NAV_ITEMS = [
 
 const Header = () => {
   const [res, setRes] = useState(false);
+
   const handleRes = () => {
     setRes(!res);
   };
+
   return (
     <header className="absolute z-50 top-0 left-0 w-full">
       <div className="container relative">
@@ -27,7 +31,7 @@ const Header = () => {
           <div className="logo">
             <Image src="/images/logo.png" width={220} height={139} alt="" />
           </div>
-          <div className="social_icons lg:flex hidden gap-6 items-center justify-between ">
+          <div className="social_icons lg:flex hidden gap-6 items-center justify-between">
             <Image src="/images/tk.svg" width={24} height={24} alt="" />
             <Image src="/images/insta.svg" width={24} height={24} alt="" />
             <Image src="/images/x.svg" width={24} height={24} alt="" />
@@ -64,10 +68,12 @@ const Header = () => {
           </div>
         </div>
       </div>
+
       <div
-        className={`navbar lg:border-y-[0.5px] border-y-white/50 lg:py-3 2xl:mt-5 lg:mt-3 lg:static fixed top-0 left-0 w-full h-full lg:bg-none bg-custom-gradient2 pt-28 ${
-          res ? "block" : "lg:block hidden"
-        }`} >
+        className={`navbar lg:border-y-[0.5px] border-y-white/50 lg:py-3 2xl:mt-5 lg:mt-3 lg:static fixed top-0 left-0 w-full h-full lg:bg-none ${
+          res ? "block navbar-open" : "lg:block hidden"
+        } bg-custom-gradient pt-28`}
+      >
         <ul className="container flex lg:flex-row flex-col justify-between lg:items-center">
           {NAV_ITEMS.map((item, index) => (
             <li
@@ -93,7 +99,7 @@ const Header = () => {
           <ButtonLink
             text="Log in"
             link="#"
-            classes="py-3 max-w-[142px] w-full px-10 block "
+            classes="py-3 max-w-[142px] w-full px-10 block"
           />
           <div className="social_icons flex gap-6 items-center justify-between absolute bottom-10">
             <Image src="/images/tk.svg" width={24} height={24} alt="" />

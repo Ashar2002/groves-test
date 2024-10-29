@@ -21,12 +21,12 @@ const AttractionSlider = () => {
 
   return (
     <>
-      <div className="container lg:pt-[100px]">
+      <div className="container md:pt-[100px] pt-12 sm:px-0 px-4">
         <h2 className="pb-10">
           Book General Access ticket and <br className="md:block hidden" /> enjoy the attractions for free
         </h2>
         <ButtonLink
-          classes="py-4 max-w-[350px] w-full pl-6 pr-4"
+          classes="py-4 sm:max-w-[350px] max-w-[300px] text-[15px] w-full pl-6 pr-4"
           text="Book General Access Ticket"
           link="#"
           arrow

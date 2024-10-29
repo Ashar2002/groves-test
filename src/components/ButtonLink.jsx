@@ -10,7 +10,7 @@ const ButtonLink = ({ link, classes, text,arrow }) => {
     >
       {text}
       {arrow && (
-        <Image src="/images/arrow.png" alt="arrow" width={26} height={19} className="w-fit h-auto" />
+        <Image src="/images/arrow.png" alt="arrow" width={26} height={19} className="md:w-7 h-auto" />
       )}
     </Link>
   );
