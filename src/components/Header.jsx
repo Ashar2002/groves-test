@@ -24,7 +24,7 @@ const Header = () => {
     <header className="absolute z-50 top-0 left-0 w-full">
       <div className="container relative">
         <div
-          className={`topbar flex items-center justify-between gap-10 pb-3 lg:pt-2 pt-4 lg:static z-10 ${
+          className={`topbar flex items-center justify-between gap-10 pb-3 lg:pt-5 pt-4 lg:static z-10 ${
             res ? "fixed" : "absolute"
           } w-full top-0 left-0 lg:px-0 px-8`}
         >
